@@ -150,8 +150,8 @@ nav {
   display: flex;
   flex-shrink: 0;
   font-size: 100px;
-  height: 420px;
-  width: 400px;
+  height: 300px;
+  width: 280px;
   justify-content: center;
   margin: 0 1rem;
   position: relative;
@@ -270,12 +270,48 @@ nav {
 }
 
 .about-us-text {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin: 30px;
 }
 
+/* Projects CSS */
 .projects-container {
   height: 30%;
+}
+
+.projects-list-container{
+  background-color: rgba(225, 111, 6, 0.1);
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: space-between;
+  border-radius: 10px;
+}
+
+.project-container {
+  margin: 20px;
+  height: 280px;
+  width: 220px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.234);
+  display: flex;
+  flex-direction: column;
+}
+
+.location-image{
+  width: 100%;
+  height: 50px;
+  background-color: #e5b181;
+  flex: 4;
+}
+
+.location-place{
+  height: 50px;
+  width: 100%;
+  background-color: #e16f06;
+  border-radius: 10px;
+  flex: 1;
 }
 
 .signup-container {
