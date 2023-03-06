@@ -111,7 +111,7 @@ nav {
 
 /* Company values */
 .company-values-container {
-   padding: 0px 35px 0px 35px;
+  padding: 0px 35px 0px 35px;
 }
 
 .company-values-text {
@@ -245,7 +245,9 @@ nav {
   display: flex;
   flex-direction: row;
   /* margin: 30px auto; */
-  padding: 70px;
+  padding: 50px 120px 50px 120px;
+  gap: 40px;
+  background-color: rgba(225, 111, 6, 0.1);
 }
 
 .sub-container-about-1 {
@@ -256,8 +258,7 @@ nav {
 .about-us-image {
   /* height: 285px; */
   /* width: 452px; */
-
-  width: 100%;
+  width: 84%;
   height: auto;
   border-radius: 10px;
 }
@@ -265,13 +266,12 @@ nav {
 .sub-container-about-2 {
   flex: 1;
   border-radius: 10px;
-  background-color: #E16F06;
+  background-color: #e16f06;
 }
 
-.about-us-text{
+.about-us-text {
   font-size: 1.5rem;
   margin: 30px;
-
 }
 
 .projects-container {
@@ -309,6 +309,8 @@ nav {
 
 .main-header-text {
   font-size: 64px;
+  margin-left: 90px;
+  margin-top: 0px;
 }
 
 .container-styles {
