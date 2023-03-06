@@ -279,7 +279,7 @@ nav {
   height: 30%;
 }
 
-.projects-list-container{
+.projects-list-container {
   background-color: rgba(225, 111, 6, 0.1);
   margin-top: 10px;
   display: flex;
@@ -290,33 +290,89 @@ nav {
 }
 
 .project-container {
-  margin: 20px;
+  margin: 25px;
   height: 280px;
-  width: 220px;
+  width: 240px;
   border-radius: 10px;
-  background-color: rgba(0, 0, 0, 0.234);
+  background-color: rgba(255, 255, 255, 0);
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
-.location-image{
+.project-container:hover{
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.location-image {
   width: 100%;
-  height: 50px;
-  background-color: #e5b181;
+  height: 190px;
+  /* background-color: #e5b181; */
   border-radius: 10px;
-  flex: 4;
+  display: flex;
+  /* flex: 3; */
 }
 
-.location-place{
+.project-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  /* display: block; */
+}
+
+.location-place {
   height: 50px;
   width: 100%;
   background-color: #e16f06;
   border-radius: 10px;
-  flex: 1;
+  /* flex: 1; */
+  text-align: center;
 }
 
+/* Signup CSS */
 .signup-container {
   height: 30%;
+  padding: 20px 35px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.signup-text {
+  margin: 0px;
+  font-size: 1.5rem;
+  color: rgba(225, 111, 6, 1);
+}
+
+.email-input {
+  background-color: #fff;
+  height: 40px;
+  width: 40%;
+  display: flex;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.signup-btn{
+  width: 130px;
+  height: 100%;
+  background-color: rgba(238, 156, 6, 0.29);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.signup-btn:hover{
+  cursor: pointer;
+  background-color: rgba(238, 156, 6, 0.5);
+
 }
 
 .footer-container {
@@ -352,4 +408,5 @@ nav {
 
 .container-styles {
   padding: 30px;
+  background-color: #fff;
 }
