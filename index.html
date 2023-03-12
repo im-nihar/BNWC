@@ -18,9 +18,22 @@
 
     <div class="container">
       <nav>
+        <div class="dummy-container-nav"></div>
         <div class="header-container">
-          <img src="images/logo.png" alt="logo" class="logo-image" />
-          <p>asd</p>
+          <div>
+            <img src="images/logo.png" alt="logo" class="logo-image" />
+          </div>
+          <div class="search-container">
+            <div class="icon-search">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <path
+                  d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
+                />
+              </svg>
+            </div>
+          </div>
+          <div></div>
         </div>
         <input type="checkbox" id="toggleNav" />
         <label for="toggleNav" class="labelLook"> &#9776;</label>
@@ -45,11 +58,13 @@
       </header> -->
       <div class="dummy-container" style="width: 100%; height: 60px"></div>
       <div class="section-one">
-        <!-- <img
+        <!-- <div>
+          <img
           src="images/homeInside2.jpg"
           alt="background image"
           class="bg-image"
-        /> -->
+          />
+        </div> -->
         <div class="sub-container-one">
           <div class="heading-1">
             <h1>BNWC</h1>
@@ -72,35 +87,35 @@
 
               <div class="slides">
                 <div
-                  class="slides-item slide-1"
+                  class="slides-item"
                   id="slide-1"
                   aria-label="slide 1 of 3"
                   tabindex="0"
                 >
-                  <p style="font-size: 18px; margin: 0px">
+                  <p class="statement">
                     Reduce the carbon footprint of the construction industry by
                     implementing innovative sustainable practices, educating our
                     clients and stakeholders on the importance of sustainability
                   </p>
                 </div>
                 <div
-                  class="slides-item slide-2"
+                  class="slides-item"
                   id="slide-2"
                   aria-label="slide 2 of 3"
                   tabindex="0"
                 >
-                  <p style="font-size: 18px; margin: 0px">
+                  <p class="statement">
                     Collaborating with industry partners to drive change and
                     progress towards a more sustainable future.
                   </p>
                 </div>
                 <div
-                  class="slides-item slide-3"
+                  class="slides-item"
                   id="slide-3"
                   aria-label="slide 3 of 3"
                   tabindex="0"
                 >
-                  <p style="font-size: 18px; margin: 0px">
+                  <p class="statement">
                     Through our commitment to sustainability, we aim to create
                     long-term value for our clients, our employees, and the
                     communities we serve
@@ -109,7 +124,6 @@
               </div>
               <div class="arrows-carousel">&#8680;</div>
             </div>
-
             <!-- <div class="carousel__nav">
               <a class="slider-nav" href="#slide-1" aria-label="Go to slide 1"
                 >1</a
@@ -124,11 +138,285 @@
           </div>
         </div>
       </div>
-      <div class="section-two">
-        <div></div>
+      <!-- <div class="section-two">
+        <div class="service-header-container">
+          <h1>Services</h1>
+        </div>
+        <div class="carousel">
+          <div class="sub-container-carousel">
+            <div class="arrows-carousel">&#8678;</div>
+            <div
+              class="slides"
+              style="background-color: aquamarine; width: 70%"
+            >
+              <div class="service-slides slides-item">
+                <div
+                  class="service-slides-item"
+                  id="service-slide-1"
+                  aria-label="slide 1 of 4"
+                  tabindex="0"
+                >
+                  <span class="service-slides-text header-1">
+                    Construction Materials
+                  </span>
+                  <span class="service-slides-text">
+                    Purchase sustainable materials with cost saving
+                  </span>
+                  <div class="service-image-container">
+                    <img
+                      src="images/service1.jpg"
+                      alt="service image 1"
+                      class="service-image"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="arrows-carousel">&#8680;</div>
+          </div>
+        </div>
+      </div> -->
+      <div class="section-services">
+        <div class="sub-container-one">
+          <div class="service-header-container">
+            <h1>Services</h1>
+          </div>
+          <div class="carousel">
+            <div class="sub-container-carousel">
+              <div class="arrows-carousel">&#8678;</div>
+              <div class="slides" style="gap: 15px">
+                <div
+                  class="service-slides-item slides-item"
+                  id="service-slide-1"
+                  aria-label="slide 1 of 4"
+                  tabindex="0"
+                >
+                  <span class="service-slides-text header-1">
+                    Construction Materials
+                  </span>
+                  <span class="service-slides-text">
+                    Purchase sustainable materials with cost saving
+                  </span>
+                  <div class="service-image-container">
+                    <img
+                      src="images/service1.jpg"
+                      alt="service image 1"
+                      class="service-image"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="service-slides-item slides-item"
+                  id="service-slide-1"
+                  aria-label="slide 1 of 4"
+                  tabindex="0"
+                >
+                  <span class="service-slides-text header-1"> Decoration </span>
+                  <span class="service-slides-text">
+                    Purchase sustainable materials with cost saving
+                  </span>
+                  <div class="service-image-container">
+                    <img
+                      src="images/service1.jpg"
+                      alt="service image 1"
+                      class="service-image"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="service-slides-item slides-item"
+                  id="service-slide-1"
+                  aria-label="slide 1 of 4"
+                  tabindex="0"
+                >
+                  <span class="service-slides-text header-1">
+                    Reburshiment
+                  </span>
+                  <span class="service-slides-text">
+                    Purchase sustainable materials with cost saving
+                  </span>
+                  <div class="service-image-container">
+                    <img
+                      src="images/service1.jpg"
+                      alt="service image 1"
+                      class="service-image"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="service-slides-item slides-item"
+                  id="service-slide-1"
+                  aria-label="slide 1 of 4"
+                  tabindex="0"
+                >
+                  <span class="service-slides-text header-1">
+                    Consulation
+                  </span>
+                  <span class="service-slides-text">
+                    Purchase sustainable materials with cost saving
+                  </span>
+                  <div class="service-image-container">
+                    <img
+                      src="images/service1.jpg"
+                      alt="service image 1"
+                      class="service-image"
+                    />
+                  </div>
+                </div>
+                <!-- <div
+                  class="slides-item"
+                  id="slide-2"
+                  aria-label="slide 2 of 3"
+                  tabindex="0"
+                >
+                  <p style="font-size: 18px; margin: 0px">
+                    Collaborating with industry partners to drive change and
+                    progress towards a more sustainable future.
+                  </p>
+                </div> -->
+                <!-- <div
+                  class="slides-item"
+                  id="slide-3"
+                  aria-label="slide 3 of 3"
+                  tabindex="0"
+                >
+                  <p style="font-size: 18px; margin: 0px">
+                    Through our commitment to sustainability, we aim to create
+                    long-term value for our clients, our employees, and the
+                    communities we serve
+                  </p>
+                </div> -->
+              </div>
+              <div class="arrows-carousel">&#8680;</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-about-us">
+        <div class="header-about-us">
+          <h1>About Us</h1>
+        </div>
+        <div class="sub-container-about-us">
+          <img
+            src="images/aboutUs.jpg"
+            alt="about us"
+            class="about-us-image"
+            height="100px"
+            width="200px"
+          />
+          <div class="about-us-statement">
+            <span>
+              Our construction company is committed to building sustainable
+              structures that have minimal impact on the environment. We use
+              environmentally-friendly materials and incorporate features like
+              solar panels and rainwater harvesting systems into our designs.
+              Our focus on sustainability helps us create buildings that are
+              energy-efficient, cost-effective, and have a positive impact on
+              the planet.
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-projects">
+        <div class="project-header">
+          <h1>Project</h1>
+        </div>
+        <div class="locations">
+          <div class="location">
+            <div>
+              <img
+                src="images/galwayImage.jpg"
+                alt="about us"
+                class="about-us-image"
+                height="100px"
+                width="200px"
+              />
+            </div>
+            <div class="location-name">
+              <h2>Galway</h2>
+            </div>
+          </div>
+          <div class="location">
+            <div>
+              <img
+                src="images/donegalImage.jpg"
+                alt="about us"
+                class="about-us-image"
+                height="100px"
+                width="200px"
+              />
+            </div>
+            <div class="location-name">
+              <h2>Donegal</h2>
+            </div>
+          </div>
+          <div class="location">
+            <div>
+              <img
+                src="images/donegalImage.jpg"
+                alt="about us"
+                class="about-us-image"
+                height="100px"
+                width="200px"
+              />
+            </div>
+            <div class="location-name">
+              <h2>Laois</h2>
+            </div>
+          </div>
+          <div class="location">
+            <div>
+              <img
+                src="images/galwayImage.jpg"
+                alt="about us"
+                class="about-us-image"
+                height="100px"
+                width="200px"
+              />
+            </div>
+            <div class="location-name">
+              <h2>Mayo</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section-signup">
+        <h2>Sign Up to Get Latest News/Updates</h2>
+        <div class="email-field common-fields-signup">
+          <h3>Enter your email</h3>
+        </div>
+        <div class="signup-btn common-fields-signup">
+          <h3>Sign up</h3>
+        </div>
       </div>
       <footer>
-        <h2>Contact Details here</h2>
+        <div>
+          <h2>Follow us on social media</h2>
+        </div>
+        <div class="social-links-container">
+          <div class="social-links">
+            <a href=""><i class="fab fa-linkedin"></i></a>
+            <span>LinkedIn</span>
+          </div>
+          <div class="social-links">
+            <a href=""><i class="fab fa-facebook"></i></a>
+            <span>Facebook</span>
+          </div>
+          <div class="social-links">
+            <a href=""><i class="fab fa-twitter"></i></a>
+            <span>Twitter</span>
+          </div>
+          <div class="social-links">
+            <a href=""><i class="fab fa-instagram"></i></a>
+            <span>Instagram</span>
+          </div>
+          <div class="social-links">
+            <a href=""><i class="fab fa-whatsapp"></i></a>
+            <span>Whatsapp</span>
+          </div>
+        </div>
         <!-- <ul>
           <li class="social">
             <a href=""><i class="fab fa-facebook"></i></a>
