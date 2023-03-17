@@ -512,8 +512,47 @@ nav ul {
     grid-template-areas:
       "nav nav nav nav"
       "head head head head"
-      "section-one section-one section-one section-one"
+      " section-one section-one section-one section-one"
+      "section-services section-services section-services section-services"
+      "section-about-us section-about-us section-about-us section-about-us"
+      "section-projects section-projects section-projects section-projects"
+      "section-signup section-signup section-signup section-signup"
       "foot foot foot foot";
+  }
+
+  .heading-1 {
+    grid-area: company-name;
+  }
+
+  .heading-1 h1 {
+    margin-top: 25px;
+    font-size: 4rem;
+  }
+
+  .heading-2 {
+    grid-area: company-slogan;
+    align-self: flex-end;
+  }
+
+  .heading-2 h2 {
+    font-size: 3.5rem;
+  }
+
+  .carousel {
+    grid-area: company-carousel;
+    margin: auto;
+    margin-top: 1rem;
+  }
+
+  .slides-carousel-1 {
+    display: grid;
+    padding: 0px 90px;
+    gap: 1.7rem;
+    text-align: start;
+  }
+
+  .arrows-carousel {
+    display: none;
   }
 
   nav ul {
@@ -539,4 +578,83 @@ nav ul {
   .dummy-container {
     display: none;
   }
+  .dummy-container-nav {
+    display: none;
+  }
+
+  .sub-container-one {
+    height: 80vh;
+    grid-template-areas:
+      ". . . ."
+      " company-slogan company-slogan company-name company-name"
+      "company-slogan company-slogan company-carousel company-carousel"
+      ". . . .";
+    grid-auto-columns: minmax(0, 1fr);
+    grid-auto-flow: column;
+  }
+
+  .heading-1 {
+    /* grid-column: 4 / 4; */
+    grid-row: 2 / 4;
+    /* 2/5 */
+    background-color: #ffffff64;
+    border-radius: var(--border-radius);
+  }
+
+  /* Services Section */
+
+  .sub-container-services {
+    height: auto;
+    display: grid;
+    grid-auto-columns: auto;
+    /* grid-auto-flow: column; */
+    grid-template-areas:
+      "service-header-section service-header-section service-header-section service-header-section"
+      "carousel-service-section carousel-service-section  carousel-service-section  carousel-service-section ";
+  }
+
+  .service-header-container {
+    color: var(--orange-color-1);
+    grid-area: service-header-section;
+  }
+
+  .carousel-service {
+    grid-area: carousel-service-section;
+    margin: 0px;
+  }
+
+  .slides-services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* grid-template-rows: repeat(3, 1fr); */
+  }
+
+  /* About Us */
+  .sub-container-about-us {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .about-us-image {
+    min-width: 400px;
+    max-width: 500px;
+    flex: 1;
+  }
+  .about-us-statement {
+    max-width: 450px;
+    min-height: 280px;
+    font-size: 1.3rem;
+  }
+
+  /*  grid-area: company-name;
+}
+
+.heading-2{
+  grid-area: company-slogan;
+}
+
+.carousel{
+  grid-area: company-carousel; */
 }
