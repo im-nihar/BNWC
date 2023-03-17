@@ -572,12 +572,43 @@ nav ul {
   .labelLook {
     display: none;
   }
-  .header-container {
-    display: none;
+
+  nav {
+    /* position: fixed; */
+    width: 100%;
+    display: flex;
+    /* background-color: var(--orange-color-2); */
   }
+
+  nav ul {
+    flex: 2;
+    align-items: center;
+    background-color: var(--orange-color-2);
+    height: 80px;
+  }
+
+  nav a {
+    background: none;
+    font-size: 20px;
+    color: var(--orange-color-1);
+  }
+
+  .header-container {
+    /* display: none; */
+    position: relative;
+    flex: 1;
+    height: inherit;
+  }
+
+  .search-container {
+    width: 50%;
+    margin-left: 20px;
+  }
+
   .dummy-container {
     display: none;
   }
+
   .dummy-container-nav {
     display: none;
   }
@@ -648,6 +679,88 @@ nav ul {
     font-size: 1.3rem;
   }
 
+  .header-about-us h1 {
+    margin: 0 0 10px 40px;
+    font-size: 2.7rem;
+  }
+
+  /* Project */
+
+  .project-header h1 {
+    font-size: 2.7rem;
+    margin: 0 0 10px 40px;
+  }
+
+  .locations {
+    width: 90%;
+    margin: auto;
+  }
+
+  .location {
+    margin-top: 10px;
+  }
+
+  .location-image {
+    height: 100%;
+    /* width: auto; */
+    min-width: -webkit-fill-available;
+    border-radius: var(--border-radius);
+  }
+
+  /* Signup */
+  .section-signup {
+    grid-area: section-signup;
+    display: grid;
+    align-items: center;
+    /* grid-row: 1; */
+    /* flex-direction: row; */
+    padding: 20px 200px 20px 200px;
+    /* align-items: center; */
+    grid-auto-columns: minmax(0, 1fr);
+    grid-template-areas: "signup-header-section signup-header-section email-field-section signup-btn-section";
+    margin-bottom: 30px;
+  }
+
+  .signup-header {
+    grid-area: signup-header-section;
+    /* grid-column: span 2; */
+    /* grid-row: 1 / 2; */
+  }
+
+  .signup-header h2 {
+    font-size: 1.8rem;
+  }
+
+  .email-field {
+    grid-area: email-field-section;
+    /* grid-column: span 2; */
+    /* grid-row: 1 / 2; */
+    grid-column-start: 3;
+    grid-column-end: 5;
+  }
+
+  .signup-btn {
+    grid-area: signup-btn-section;
+    width: 160px;
+    height: 40px;
+    /* grid-column-start: 4; */
+    /* grid-column-end: 5; */
+    justify-self: right;
+    margin-right: 5px;
+  }
+
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .connect-us {
+    font-size: 24px;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+  }
   /*  grid-area: company-name;
 }
 
