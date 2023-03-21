@@ -592,7 +592,6 @@ nav ul {
   }
 
   .header-container {
-    /* display: none; */
     position: relative;
     flex: 1;
     height: inherit;
@@ -763,6 +762,15 @@ nav ul {
     display: flex;
     gap: 20px;
     justify-content: space-between;
+  }
+
+  .connect-us a {
+    text-decoration: none;
+    color: var(--white-color-1);
+  }
+
+  .connect-us a:hover {
+    text-decoration: underline;
   }
 
   /* HOVERING EFFECTS */
