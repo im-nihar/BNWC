@@ -264,6 +264,12 @@ footer {
   padding-top: 10px;
 }
 
+.align-submit-btn {
+  /* width: 100%; */
+  max-width: 400px;
+  margin: auto;
+}
+
 @media screen and (min-width: 90ch) {
   /* NAV */
 
