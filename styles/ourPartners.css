@@ -197,15 +197,37 @@ footer {
   flex: 1.4;
 }
 
+.our-partners {
+  padding: 30px 0;
+  overflow-x: hidden;
+}
+
 /* Marquee container */
 
 .marquee {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
+  /* display: flex; */
+  padding: 50px 0;
+  /* grid-template-columns: repeat(auto-fit, minmax(390px, 1fr)); */
+}
+
+.marquee-image-container {
+  height: 100px;
+  width: 250px;
+}
+
+.marquee-image {
+  height: 60px;
+  padding: 0px 20px;
+
+  /* height: 100%;
+  width: 100%;
+  object-fit: contain; */
+  /* overflow: hidden; */
+  /* width: 300px; */
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .marquee-image {
+  .marquee {
     animation: none;
   }
 }
@@ -214,6 +236,15 @@ footer {
   0% {
     transform: translateX(100%);
   }
+  /* 20% {
+    transform: translateX(80%);
+  }
+  40% {
+    transform: translateX(60%);
+  }
+  60% {
+    transform: translateX(40%);
+  } */
   100% {
     transform: translateX(-100%);
   }
@@ -288,17 +319,42 @@ footer {
   font-size: 1.1rem;
 }
 
+@media (min-width: 300px) and (max-width: 700px) {
+  .marquee-image-container {
+    height: 100px;
+    width: 250px;
+    margin: auto
+  }
+
+  .marquee-image {
+    height: 60px;
+    padding: 0px 20px;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    /* overflow: hidden; */
+    /* width: 300px; */
+  }
+}
+
 @media screen and (min-width: 90ch) {
   @media (prefers-reduced-motion: no-preference) {
-    .marquee-image {
-      animation: marquee 5s linear infinite;
+    .marquee {
+      display: flex;
+      animation: marquee 35s linear infinite;
+      /* width: 450px; */
+      /* line-height: 50px; */
+      /* background-color: red; */
+      /* color: white; */
+      /* white-space: nowrap; */
+      /* overflow: hidden; */
+      /* box-sizing: border-box; */
     }
   }
 
   .main-container {
     padding: 40px 100px 20px 100px;
   }
-
 
   /* NAV */
 
@@ -383,6 +439,11 @@ footer {
     /* grid-template-rows: 80px 200px; */
     /* grid-template-columns: auto auto auto; */
     flex-direction: row;
+  }
+
+  .marquee-image-container {
+    height: 100px;
+    width: 250px;
   }
 
   /* .header-details-container {
