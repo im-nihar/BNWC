@@ -182,7 +182,7 @@ figure {
     margin: 3px;
 }
 
-div.imgWrap {
+div.image-container {
     display: flex;
     flex-direction: column;
     flex: 1;
