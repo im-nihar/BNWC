@@ -51,9 +51,10 @@ nav {
 nav a {
   display: block;
   text-align: center;
-  padding: 10px;
+  padding: 10px 5px;
   text-decoration: none;
   background-color: rgb(255, 255, 255);
+  font-size: 20px;
 }
 
 nav li {
@@ -62,8 +63,9 @@ nav li {
 }
 
 nav a:hover {
-  background-color: lightblue;
-  color: #000;
+  background-color: var(--orange-color-1);
+  color: var(--black-color-1);
+  border-radius: var(--border-radius);
 }
 
 #toggleNav {
@@ -280,7 +282,7 @@ figure:hover img {
 
   nav a {
     background: none;
-    font-size: 20px;
+    font-size: 18px;
     color: var(--orange-color-1);
   }
 
@@ -302,7 +304,7 @@ figure:hover img {
   }
 
   .search-container {
-    width: 50%;
+    width: 60%;
     margin-left: 20px;
   }
 
