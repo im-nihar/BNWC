@@ -32,10 +32,17 @@
   align-items: center;
 }
 
+.header-container a {
+  padding: 0px;
+  text-decoration: none;
+  height: 60px;
+}
+
 .logo-image {
   cursor: pointer;
   height: 60px;
   width: 110px;
+  background-color: var(--orange-color-2);
 }
 
 /* Main Container */
@@ -260,11 +267,11 @@ nav ul {
   margin-left: 10px;
 }
 
-.logo-image {
+/* .logo-image {
   cursor: pointer;
   height: 60px;
   width: 110px;
-}
+} */
 
 /* Footer  */
 footer {
@@ -293,6 +300,9 @@ footer {
 
 @media screen and (min-width: 90ch) {
   /* NAV */
+  .logo-image {
+    background-color: transparent;
+  }
 
   nav {
     /* position: fixed; */
@@ -419,7 +429,7 @@ footer {
   }
 
   .sub-container-stats {
-    margin: 25px 10px;
+    margin: 40px 10px;
   }
 
   .exprience-number {

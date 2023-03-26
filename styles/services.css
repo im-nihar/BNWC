@@ -117,10 +117,17 @@ nav ul {
   margin-left: 10px;
 }
 
+.header-container a {
+  padding: 0px;
+  text-decoration: none;
+  height: 60px;
+}
+
 .logo-image {
   cursor: pointer;
   height: 60px;
   width: 110px;
+  background-color: var(--orange-color-2);
 }
 
 /* Footer  */
@@ -209,7 +216,21 @@ footer {
 }
 
 .header-ad-1 {
-  font-size: 24px;
+  font-size: 28px;
+}
+
+.header-1-ad {
+  background-color: var(--white-color-1);
+  padding: 5px;
+}
+
+.ad-3-container {
+  position: relative;
+}
+
+.dates {
+  position: absolute;
+  font-size: 14px;
 }
 
 .header-align {
@@ -247,6 +268,11 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+
+.service-name h2 {
+  font-size: 20px;
+  text-align: center;
 }
 
 @media screen and (min-width: 90ch) {
@@ -297,6 +323,10 @@ footer {
     height: inherit;
   }
 
+  .logo-image {
+    background-color: transparent;
+  }
+
   .search-container {
     width: 60%;
     margin-left: 20px;
@@ -338,8 +368,7 @@ footer {
     align-items: center;
   }
 
-
-  .ad-container{
+  .ad-container {
     margin-top: 0px;
   }
 

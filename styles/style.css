@@ -125,10 +125,21 @@ nav a:hover {
   margin-left: 10px;
 }
 
+.header-container a {
+  padding: 0px;
+  text-decoration: none;
+  height: 60px;
+}
+
 .logo-image {
   cursor: pointer;
   height: 60px;
   width: 110px;
+  background-color: var(--orange-color-2);
+}
+
+.logo-image:hover {
+  background-color: var(--orange-color-3);
 }
 
 /* Section one */
@@ -333,7 +344,7 @@ nav ul {
 }
 
 .service-slides-text {
-  font-size: 1rem;
+  font-size: 1.2rem;
   padding: 10px;
   color: var(--white-color-1);
 }
@@ -350,14 +361,18 @@ nav ul {
 }
 
 .service-image-container {
-  max-height: 250px;
+  height: 250px;
 }
 
 .service-image {
-  border-radius: 10px;
+  /* border-radius: 10px;
   height: 80%;
   min-width: -webkit-fill-available;
-  max-height: 360px;
+  max-height: 360px; */
+  width: 80%;
+  height: 100%;
+  object-fit: scale-down; /*contain*/
+  border-radius: var(--border-radius);
 }
 
 /* About Us */
@@ -519,6 +534,11 @@ nav ul {
       "section-signup section-signup section-signup section-signup"
       "foot foot foot foot";
   }
+
+  .logo-image {
+    background-color: transparent;
+  }
+
 
   .heading-1 {
     grid-area: company-name;

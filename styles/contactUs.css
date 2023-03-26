@@ -107,10 +107,17 @@ nav ul {
   margin-left: 10px;
 }
 
+.header-container a {
+  padding: 0px;
+  text-decoration: none;
+  height: 60px;
+}
+
 .logo-image {
   cursor: pointer;
   height: 60px;
   width: 110px;
+  background-color: var(--orange-color-2);
 }
 
 /* Footer  */
@@ -274,6 +281,9 @@ footer {
 
 @media screen and (min-width: 90ch) {
   /* NAV */
+  .logo-image {
+    background-color: transparent;
+  }
 
   nav {
     /* position: fixed; */

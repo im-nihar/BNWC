@@ -112,10 +112,17 @@ nav ul {
   margin-left: 10px;
 }
 
+.header-container a {
+  padding: 0px;
+  text-decoration: none;
+  height: 60px;
+}
+
 .logo-image {
   cursor: pointer;
   height: 60px;
   width: 110px;
+  background-color: var(--orange-color-2);
 }
 
 /* Footer  */
@@ -262,6 +269,10 @@ figure:hover img {
     padding: 40px 100px 20px 100px;
     max-width: 1280px;
     margin: 0 auto;
+  }
+
+  .logo-image {
+    background-color: transparent;
   }
 
   /* NAV */
