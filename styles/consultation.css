@@ -106,7 +106,7 @@
 .info-statement {
   background-color: var(--orange-color-3);
   padding: 5px;
-  margin: auto;
+  /* margin: auto; */
   border-radius: var(--border-radius);
 }
 
@@ -336,7 +336,7 @@ footer {
   .info-container {
     flex: 1;
     text-align: -webkit-auto;
-    margin-top: 20px;
+    /* margin-top: 20px; */
   }
 
   .info-pill {
@@ -353,7 +353,7 @@ footer {
 
   .info-statement-container {
     flex-direction: column;
-    width: 100%;
+    /* width: 100%; */
   }
 
   .info-statement {

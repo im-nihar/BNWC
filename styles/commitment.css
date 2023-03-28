@@ -156,6 +156,10 @@ nav ul {
   background-color: var(--orange-color-2);
 }
 
+.header-span{
+  text-align: justify
+}
+
 /* Footer  */
 footer {
   background-color: var(--orange-color-1);

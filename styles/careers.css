@@ -219,6 +219,10 @@ footer {
   font-size: 1rem;
 }
 
+.justify-text {
+  text-align: justify;
+}
+
 .know-more-btn {
   display: flex;
   justify-content: center;

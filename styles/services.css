@@ -15,6 +15,7 @@
   --grey-color-2: #f8f8f8;
   --white-color-1: #fff;
   --black-color-1: #000000;
+  --green-color-1: #00d959;
   --font-size-heading: 64px;
   --font-size-heading-2: 1.7rem;
   --font-size-heading-3: 3rem;
@@ -262,6 +263,10 @@ footer {
   font-size: 20px;
   text-align: center;
 }
+
+/* .green{
+  background-color: var(--green-color-1);
+} */
 
 @media screen and (min-width: 90ch) {
   .main-container {

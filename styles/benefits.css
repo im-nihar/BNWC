@@ -16,6 +16,8 @@
   --white-color-1: #fff;
   --black-color-1: #000000;
   --green-color-1: #00d959;
+  --green-color-2: #00800021;
+  --blue-color-1: #00cbff1f;
   --font-size-heading: 64px;
   --font-size-heading-2: 1.7rem;
   --font-size-heading-3: 3rem;
@@ -155,6 +157,7 @@ footer {
   text-align: center;
   display: flex;
   flex-direction: column;
+  justify-content: center
 }
 
 .benefits-img {
@@ -197,6 +200,14 @@ footer {
   border: 1px solid var(--grey-color-1);
   min-width: 250px;
   box-shadow: 5px 5px 20px 1px var(--grey-color-1);
+}
+
+.green-card {
+  background-color: var(--green-color-2);
+}
+
+.blue-card {
+  background-color: var(--blue-color-1);
 }
 
 @media screen and (min-width: 90ch) {
