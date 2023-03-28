@@ -97,7 +97,7 @@ nav li {
 
 nav a:hover {
   background-color: var(--orange-color-1);
-  color: var(--black-color-1);
+  color: var(--white-color-1);
   border-radius: var(--border-radius);
 }
 
