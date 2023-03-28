@@ -247,7 +247,9 @@ footer {
   justify-items: center;
   margin-top: 20px;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 10px;
+  gap: 20px;
+  padding: 10px;
+  border-radius: var(--border-radius);
 }
 
 .service {
@@ -257,6 +259,9 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  border: 1px solid var(--grey-color-1);
+  border-radius: var(--border-radius);
+  box-shadow: 1px 1px 10px 1px var(--grey-color-1);
 }
 
 .service-name h2 {
