@@ -13,6 +13,7 @@
   --orange-color-5: rgb(245 136 35);
   --white-color-1: #fff;
   --black-color-1: #000000;
+  --green-color-1:#00800080;
   --font-size-heading: 64px;
   --font-size-heading-2: 1.7rem;
   --font-size-heading-3: 42px;
@@ -359,13 +360,15 @@ footer {
 
   .book-btn {
     align-self: flex-start;
-    height: 40px;
-    width: 40%;
+    height: 50px;
+    width: 50%;
+    margin-top: 20px;
   }
 
   .book-btn:hover {
     cursor: pointer;
-    background-color: var(--orange-color-5);
+    /* background-color: var(--orange-color-5); */
+    background-color: var(--green-color-1);
   }
 
   .info-image-container {
